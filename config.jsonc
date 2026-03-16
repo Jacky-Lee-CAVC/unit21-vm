@@ -1,0 +1,67 @@
+{
+  "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/master/doc/json_schema.json",
+  "logo": {
+      "source": "~/.config/fastfetch/ascii/ascii_art.txt",
+      "type": "file"
+      },
+  "modules": [
+    "title",
+    "separator",
+        {
+            "type": "custom",
+            "format": "\u001b[90m┌──────────────────────System──────────────────────┐"
+        },
+    "host",
+    "kernel",
+    "uptime",
+    "packages",
+    "shell",
+    "display",
+    "de",
+    "terminal",
+    "disk",
+        {
+            "type": "publicip",
+            "timeout": 1000
+        },
+        {
+            "type": "localip",
+            "showIpv6": true,
+            "showMac": true,
+            "showSpeed": true,
+            "showMtu": true,
+            "showLoop": true,
+            "showFlags": true,
+            "showAllIps": true
+        },
+    "datetime",
+    "locale",
+        {
+            "type": "custom",
+            "format": "\u001b[90m└────────────────────────────────────────────────────┘"
+        },
+        "break",
+        {
+            "type": "custom",
+            "format": "\u001b[90m┌──────────────────────Hardware──────────────────────┐"
+        },
+    {
+        "type": "cpu",
+        "showPeCoreCount": true,
+        "temp": true
+    },
+    "cpucache",
+    "cpuusage",
+    "gpu",
+    "memory",
+    "physicalmemory",
+    {
+        "type": "swap",
+        "separate": true
+    },
+        {
+            "type": "custom",
+            "format": "\u001b[90m└────────────────────────────────────────────────────┘"
+        }
+  ]
+}
