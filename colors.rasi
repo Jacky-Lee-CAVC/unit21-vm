@@ -1,0 +1,17 @@
+/* CAVC / i3 Matching Theme */
+
+* {
+    background:     #1e1e1e;
+    background-alt: #2B2B2B;
+
+    foreground:     #FFFFFF;
+    foreground-alt: #AAAAAA;
+
+    primary:        #006DB1;
+    secondary:      #007E45;
+
+    selected:       #0081C5;
+    active:         #006DB1;
+
+    urgent:         #E06C75;
+}
